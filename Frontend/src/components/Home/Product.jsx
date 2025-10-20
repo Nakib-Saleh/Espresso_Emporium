@@ -19,7 +19,7 @@ const Product = ({ coffee, coffees, setCoffees }) => {
         confirmButtonText: "Yes, delete it!"
       }).then((result) => {
         if (result.isConfirmed) {
-            fetch(`https://espresso-emporium-five.vercel.app/coffee/${id}`, {
+            fetch(`https://espresso-emporium-kp3u.onrender.com/coffee/${id}`, {
                 method: "DELETE",
               })
                 .then((res) => res.json())

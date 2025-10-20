@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage></HomePage>,
-        loader: ()=> fetch("https://espresso-emporium-five.vercel.app/coffee"),
+        loader: ()=> fetch("https://espresso-emporium-kp3u.onrender.com/coffee"),
       },
       {
         path:"/coffee",
@@ -30,12 +30,12 @@ const router = createBrowserRouter([
       {
         path: "/update/:id",
         element: <UpdateForm></UpdateForm>,
-        loader: ({params}) => fetch(`https://espresso-emporium-five.vercel.app/coffee/${params.id}`),
+        loader: ({params}) => fetch(`https://espresso-emporium-kp3u.onrender.com/coffee/${params.id}`),
       },
       {
         path: "/coffee/:id",
         element: <DetailsPage></DetailsPage>,
-        loader: ({params}) => fetch(`https://espresso-emporium-five.vercel.app/coffee/${params.id}`),
+        loader: ({params}) => fetch(`https://espresso-emporium-kp3u.onrender.com/coffee/${params.id}`),
       }
     ]
   },

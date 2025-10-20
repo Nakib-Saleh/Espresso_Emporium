@@ -30,7 +30,7 @@ const UpdateForm = () => {
     };
     //console.log(data);
 
-    fetch(`https://espresso-emporium-five.vercel.app/update/${coffee._id}`, {
+    fetch(`https://espresso-emporium-kp3u.onrender.com/update/${coffee._id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
